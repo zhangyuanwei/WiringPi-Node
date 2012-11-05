@@ -1,7 +1,7 @@
 {
     "targets": [{
         "target_name": "_wiringpi",
-        "include_dirs": ["src"],
+        "include_dirs": ["WiringPi/wiringPi"],
         "sources": [
 			"wiringpi.cc",
 			"WiringPi/wiringPi/softPwm.c",
