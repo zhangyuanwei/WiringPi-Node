@@ -1,0 +1,10 @@
+{
+   "name": "wiringpi",
+   "version": "0.0.1",
+   "description": "nodejs wrapper for the wiringPi",
+   "author": "Zhang Yuanwei <zhangyuanwei1988@gmail.com>",
+   "main": "./wiringpi",
+   "dependencies": {
+   },
+   "engines": { "node": "0.6" }
+}
