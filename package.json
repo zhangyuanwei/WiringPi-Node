@@ -7,7 +7,10 @@
     "test": "node test.js",
     "install": "node-gyp rebuild"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhangyuanwei/WiringPi-Node.git"
+  },
   "keywords": [
     "wiringPi",
     "raspberrypi",
@@ -15,6 +18,9 @@
     "io"
   ],
   "author": "ZhangYuanwei",
-  "license": "BSD",
-  "gypfile": true
+  "license": "MIT",
+  "gypfile": true,
+  "bugs": {
+    "url": "https://github.com/zhangyuanwei/WiringPi-Node/issues"
+  }
 }
