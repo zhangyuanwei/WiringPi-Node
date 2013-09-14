@@ -1,5 +1,3 @@
-#define BUILDING_NODE_EXTENSION
-
 #include <v8.h>
 #include <node.h>
 #include <node_buffer.h>
@@ -227,9 +225,8 @@ WIRING_WRAP_FUNC(wiringPiSPIDataTransfer) {
 //int wiringPiSPISetup  (int channel, int speed) ;
 WIRING_NUMBER_FUNC_INT_INT(wiringPiSPISetup)
 */
-extern "C" {
 
-void init(Handle<Object> target) {
+void wiringPiInit(Handle<Object> target) {
 	WIRING_BIND_METHOD(wiringPiSetup)
 	WIRING_BIND_METHOD(wiringPiSetupSys)
 	WIRING_BIND_METHOD(wiringPiSetupGpio)
@@ -262,6 +259,5 @@ void init(Handle<Object> target) {
 	WIRING_DEFINE_CONSTANT("LSBFIRST", LSBFIRST)
 	WIRING_DEFINE_CONSTANT("MSBFIRST", MSBFIRST)
 }
-	NODE_MODULE(wiringpi, init);
 
-}
+NODE_MODULE(wiringpi, wiringPiInit);

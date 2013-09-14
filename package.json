@@ -1,10 +1,20 @@
 {
-   "name": "wiringpi",
-   "version": "0.0.1",
-   "description": "nodejs wrapper for the wiringPi",
-   "author": "Zhang Yuanwei <zhangyuanwei1988@gmail.com>",
-   "main": "./wiringpi",
-   "dependencies": {
-   },
-   "engines": { "node": "0.6" }
+  "name": "wiringpi",
+  "version": "0.0.2",
+  "description": "nodejs wrapper for the wiringPi",
+  "main": "wiringpi.js",
+  "scripts": {
+    "test": "node test.js",
+    "install": "node-gyp rebuild"
+  },
+  "repository": "",
+  "keywords": [
+    "wiringPi",
+    "raspberrypi",
+    "arduino",
+    "io"
+  ],
+  "author": "ZhangYuanwei",
+  "license": "BSD",
+  "gypfile": true
 }
