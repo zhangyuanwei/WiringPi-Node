@@ -1,28 +1,27 @@
     {
         "targets": [{
-            "target_name": "wiringpi",
-            "include_dirs": ["src"],
+            "target_name": "wiringPi",
+            "include_dirs": ["WiringPi/wiringPi"],
             "sources": [
-    			"wiringpi.cc",
-    			"src/piThread.c",
-    			"src/wiringPiSPI.h",
-    			"src/lcd.h",
-    			"src/wiringSerial.c",
-    			"src/wiringPiSPI.c",
-    			"src/wiringShift.h",
-    			"src/gertboard.h",
-    			"src/wiringPi.c",
-    			"src/softPwm.h",
-    			"src/piHiPri.c",
-    			"src/wiringSerial.h",
-    			"src/wiringPi.h",
-    			"src/lcd.c",
-    			"src/piNes.c",
-    			"src/gertboard.c",
-    			"src/softPwm.c",
-    			"src/wiringPiFace.c",
-    			"src/wiringShift.c",
-    			"src/piNes.h"
-    		]
-    	}]
+                "wiringPi.cc",
+                "WiringPi/wiringPi/wiringPi.c"
+            ]
+        },{
+            "target_name": "wiringSerial",
+            "include_dirs": ["WiringPi/wiringPi"],
+            "sources": [
+                "WiringPi/wiringPi/wiringSerial.c",
+                "WiringPi/wiringPi/wiringShift.c",
+                "WiringPi/wiringPi/wiringPiFace.c",
+                "WiringPi/wiringPi/gertboard.c",
+                "WiringPi/wiringPi/piNes.c",
+                "WiringPi/wiringPi/lcd.c",
+                "WiringPi/wiringPi/piHiPri.c",
+                "WiringPi/wiringPi/piThread.c",
+                "WiringPi/wiringPi/wiringPiSPI.c",
+                "WiringPi/wiringPi/softPwm.c",
+                "WiringPi/wiringPi/softServo.c",
+                "WiringPi/wiringPi/softTone.c"
+			]
+		}]
     }
